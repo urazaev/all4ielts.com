@@ -1,0 +1,78 @@
+[[$header]] [[*isfolder:is==`0`:then=`
+
+<div class="bgfff container content-box">
+    <div class="row">
+        <article class="col-lg-9 blog">
+            [[breadcrumb? &containerTpl=`breadcrumb-container` ]]
+            <h1> [[*longtitle:notempty=`[[*longtitle]]`:isempty=`[[*pagetitle]]`]]</h1> [[*content]]
+            <div class="share">
+                <script type="text/javascript" src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js" charset="utf-8"></script>
+                <script type="text/javascript" src="//yastatic.net/share2/share.js" charset="utf-8"></script>
+                <div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,moimir,gplus,twitter" data-counter=""></div>
+            </div>
+        </article>
+        <aside class="col-md-3 blog-sidebar">
+            <h2>Heading text</h2>
+            <ul>
+                [[pdoResources? &tpl=`blog-tips-right` &parents=`[[*parent]]` &showHidden=`1` &includeContent=`1` &limit=`10` &depth=`3` &sortby=`menuindex` &sortdir=`ASC` ]]
+            </ul>
+
+            <div id="fb-root"></div>
+            <script>
+                (function (d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=606560039446915";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
+            </script>
+
+            <div class="fb-page" data-href="https://www.facebook.com/all4ielts" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                <blockquote cite="https://www.facebook.com/all4ielts" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/all4ielts">All4ielts</a></blockquote>
+            </div>
+
+        </aside>
+    </div>
+</div>
+<div class="container-fluid">
+    <h3>Related items</h3>
+    <div id="blog-listing mt-20">
+        <div class="wrapper-portfolio">
+            <div id="grid-container" class="cbp-l-grid-gallery">
+                <ul>
+                    [[pdoResources? &tpl=`blog-listing` &parents=`[[*parent]]` &showHidden=`1` &includeContent=`1` &limit=`3` &depth=`0` &includeTVs=`pic-universe` &sortby=`menuindex` &sortdir=`ASC` ]]
+                </ul>
+            </div>
+        </div>
+    </div>
+[[$comments]]
+</div>
+`:else=`
+<div class="bgfff container content-box">
+    <div class="container">
+        <div class="row">
+            <article class="content col-lg-12">
+                
+[[breadcrumb? &containerTpl=`breadcrumb-container` ]]
+                <h1> [[*longtitle:notempty=`[[*longtitle]]`:isempty=`[[*pagetitle]]`]]</h1> [[*content]]
+
+            </article>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div id="blog-listing mt-20">
+        <div class="wrapper-portfolio">
+            <div id="grid-container" class="cbp-l-grid-gallery">
+                <ul>
+                    [[pdoResources? &tpl=`blog-tips`  &showHidden=`1` &includeContent=`1` &limit=`6` &depth=`3` &includeTVs=`pic-universe` &sortby=`menuindex` &sortdir=`ASC` ]]
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+`]] [[$footer]]

@@ -1,0 +1,131 @@
+[[$header]]
+
+<section id="slider" class="intro-section">
+    <!-- Clients -->
+    <div class="">
+        <div class="container-fluid no-padding">
+            <ul class="list-unstyled owl-clients-v1">
+                [[pdoResources? &tpl=`@INLINE
+                <li class="item">
+                    <a class="slider-img" href="#">
+                        
+<!--
+                        <div class="box">
+                            <p class="title">[[+pagetitle]]</p>
+                            <p class="description">[[+longtitle]]</p> 
+                        </div>
+-->
+
+                        <img src="[[+tv.pic-universe]]" alt="[[+pagetitle]]">
+                    </a>
+                </li>
+                ` &parents=`129` &includeTVs=`pic-universe` &sortby=`menuindex` &sortdir=`ASC` ]]
+            </ul>
+        </div>
+    </div>
+    <!-- End of Clients -->
+</section>
+
+<section class="about-us g-mb-70 typography">
+    <div class="container">
+        <div class="row">
+            <article class="col-md-12 about-us">
+                <h1>[[*pagetitle]]</h1> [[*content]]
+        </div>
+    </div>
+    </div>
+</section>
+
+<section id="adv">
+    <!-- Call to action -->
+<!--
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="special-offer">
+                    <div class="row">
+                        <div class="col-md-8 col-sm-8">
+                            <h2>Subscribe now and get <span>20% off</span></h2>
+
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="soffer-link">
+                                <a href="#" class="btn-u btn-u-lg btn-u-dark btn-u-upper rounded">Subscribe</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+-->
+    <!-- End of Call to action -->
+</section>
+
+<!-- Testimonials -->
+<section id="testimonials">
+    <div class="testo g-mb-70">
+        <div class="container">
+            <div class="testo-in">
+                <div class="g-heading-v11 text-center g-mb-70">
+                    <h2 class="g-color-white">What do people say about us?</h2>
+                </div>
+
+                <!-- Testimonials-v3 -->
+                <div class="testimonials-v3">
+                    <ul class="list-unstyled owl-ts-v1">
+                        [[pdoResources? &tpl=`testimonial-listing` &parents=`231` &showHidden=`1` &includeContent=`1` &limit=`5` &includeTVs=`pic-universe` &sortby=`menuindex` &sortdir=`ASC` ]]
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ielts tips  -->
+<section id="about"> 
+
+    <!-- Main Services -->
+    <div class="container-fluid">
+        <div class="row equal-height-columns">
+
+            [[pdoResources? &tpl=`@INLINE
+            <div class="col-sm-3 no-padding">
+                <a class="shipping-service text-center" href="[[+uri]]" >
+                    <div class="shipping-service-img-wrapper"><img src="[[+tv.pic-universe]]" alt=""></div>
+                    <div class="shipping-service-text shipping-service-text--noborder equal-height-column">
+                        <h3>[[+pagetitle]] </h3>
+                    </div>
+                </a>
+            </div>
+            ` &parents=`230` &showHidden=`1` &includeContent=`1` &limit=`5` &depth=`0` &includeTVs=`pic-universe` &sortby=`menuindex` &sortdir=`ASC` ]]
+        </div>
+    </div>
+
+    <section id="news" class="g-bg-dark-blue1">
+        <div class="container">
+            <div class="row g-mb-60 text-center g-heading-v7">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <h2 class="h2">
+						<span class="block-name">Check out our blog </span>
+<!--						<span class="g-text-height-lg">Latest News</span>-->
+					</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div id="blog-listing mt-20">
+                <div class="wrapper-portfolio">
+                    <div id="grid-container" class="cbp-l-grid-gallery">
+                        <ul>
+                            [[pdoResources? &tpl=`blog-listing` &parents=`195` &showHidden=`1` &includeContent=`1` &limit=`6` &depth=`0` &includeTVs=`pic-universe` &sortby=`menuindex` &sortdir=`ASC` ]]
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+[[$footer]]

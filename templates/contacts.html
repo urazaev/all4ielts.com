@@ -1,0 +1,62 @@
+[[$header]] [[*pic-universe:isnotempty=`
+<div class="big-img"><img src="[[*pic-universe]]" alt="" class="img-responsive"></div>
+`]]
+<div class="bgfff container content-box">
+    <div class="row">
+        <article class="content col-lg-12 pb-70">
+            [[breadcrumb? &containerTpl=`breadcrumb-container` &homeCrumbTitle=`Home`]]
+            <h1> [[*longtitle:notempty=`[[*longtitle]]`:isempty=`[[*pagetitle]]`]]</h1>
+            <div class="contact-us nopadding">
+
+                <p>Email: [[*contacts-email]]</p>
+
+
+                <form action="/assets/plugins/sky-forms-pro/skyforms/contacts-process.php" method="post" id="sky-form3" class="sky-form contact-style">
+                    <fieldset>
+                        <div class="row g-mb-20">
+                            <div class="col-md-12 col-md-offset-0">
+                                <div>
+                                    <input type="text" name="name" id="name" class="form-control rounded" placeholder="Your Name">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row g-mb-20">
+                            <div class="col-md-12 col-md-offset-0">
+                                <div>
+                                    <input type="text" name="email" id="email" class="form-control rounded" placeholder="Email *">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row g-mb-20">
+                            <div class="col-md-12 col-md-offset-0">
+                                <div>
+                                    <textarea rows="4" name="message" id="message" class="form-control rounded g-textarea-noresize" placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p>
+                            <button type="submit" class="btn-u btn-u-lg btn-u-default btn-u-upper rounded">Submit</button>
+                        </p>
+                    </fieldset>
+
+                    <!-- Success Message -->
+                    <div class="message">
+                        <i class="rounded-x fa fa-check"></i>
+                        <p>Your message was successfully sent!</p>
+                    </div>
+                </form>
+
+
+            </div>
+            <div class="share">
+                <script type="text/javascript" src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js" charset="utf-8"></script>
+                <script type="text/javascript" src="//yastatic.net/share2/share.js" charset="utf-8"></script>
+                <div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,moimir,gplus,twitter" data-counter=""></div>
+            </div>
+        </article>
+    </div>
+</div>
+[[$footer]]

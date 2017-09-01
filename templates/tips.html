@@ -1,0 +1,62 @@
+[[$header]] [[*id:is=`198`:then=`[[$tips-nonstandart]] `:else=` [[*isfolder:is==`0`:then=`
+<div class="bgfff container content-box">
+    <div class="row">
+        <article class="content col-lg-12 pb-70">
+            [[breadcrumb? &containerTpl=`breadcrumb-container` ]]
+            <h1> [[*longtitle:notempty=`[[*longtitle]]`:isempty=`[[*pagetitle]]`]]</h1>
+            <div class="row">
+                <div class="col-lg-6">
+                    [[*pic-universe:isnotempty=`
+                    <div class="cube-content-img"><img src="[[*pic-universe]]" alt="" class="img-responsive"> </div>`]]
+                </div>
+                <div class="col-lg-6">
+                    [[*content]]
+                    <div class="share pull-right">
+                        <script type="text/javascript" src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js" charset="utf-8"></script>
+                        <script type="text/javascript" src="//yastatic.net/share2/share.js" charset="utf-8"></script>
+                        <div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,moimir,gplus,twitter" data-counter=""></div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+    <div class="row g-mt-40">
+        [[pdoResources? &tpl=`@INLINE
+        <div class="col-sm-3 no-padding">
+            <a class="shipping-service text-center" href="[[+uri]]">
+                <div class="shipping-service-img-wrapper"><img src="[[+tv.pic-universe]]" alt=""></div>
+                <div class="shipping-service-text shipping-service-text--noborder equal-height-column">
+                    <h3>[[+pagetitle]] </h3>
+                </div>
+            </a>
+        </div>
+        ` &parents=`[[*parent]]` &showHidden=`1` &includeContent=`1` &limit=`5` &depth=`0` &includeTVs=`pic-universe` &sortby=`menuindex` &sortdir=`ASC` ]]
+    </div>
+</div>
+
+`:else=` [[*pic-universe:isnotempty=`
+<div class="big-img"><img src="[[*pic-universe]]" alt="" class="img-responsive"></div>
+`]]
+<div class="bgfff container content-box">
+    <div class="row">
+        <article class="content col-lg-12 pb-70">
+            [[breadcrumb? &containerTpl=`breadcrumb-container` ]]
+            <h1> [[*longtitle:notempty=`[[*longtitle]]`:isempty=`[[*pagetitle]]`]]</h1>
+            [[*content]] 
+            <div class="row">
+                [[pdoResources? &tpl=`@INLINE
+                <div class="col-sm-3 no-padding">
+                    <a class="shipping-service text-center" href="[[+uri]]">
+                        <div class="shipping-service-img-wrapper"><img src="[[+tv.pic-universe]]" alt=""></div>
+                        <div class="shipping-service-text shipping-service-text--noborder equal-height-column">
+                            <h3>[[+pagetitle]] </h3>
+                        </div>
+                    </a>
+                </div>
+                ` &parents=`[[*id]]` &showHidden=`1` &includeContent=`1` &limit=`5` &depth=`0` &includeTVs=`pic-universe` &sortby=`menuindex` &sortdir=`ASC` ]]
+            </div>
+        </article>
+    </div>
+</div>
+
+`]] `]] [[$footer]]

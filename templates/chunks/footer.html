@@ -1,0 +1,140 @@
+<!-- Contact -->
+<section id="contact">
+    [[*id:is=`1`:then=`
+    <div class="contact-us">
+        <div class="container-fluid no-padding">
+            <div class="g-heading-v11 text-center g-mb-70">
+                <h2>Contact Us</h2>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <!-- Contact list -->
+
+                <!-- Contact form -->
+                <div class="col-md-12">
+                    <form action="/assets/plugins/sky-forms-pro/skyforms/contacts-process.php" method="post" id="sky-form3" class="sky-form contact-style">
+                        <fieldset>
+                            <div class="row g-mb-20">
+                                <div class="col-md-12 col-md-offset-0">
+                                    <div>
+                                        <input type="text" name="name" id="name" class="form-control rounded" placeholder="Your Name">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row g-mb-20">
+                                <div class="col-md-12 col-md-offset-0">
+                                    <div>
+                                        <input type="text" name="email" id="email" class="form-control rounded" placeholder="Email *">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row g-mb-20">
+                                <div class="col-md-12 col-md-offset-0">
+                                    <div>
+                                        <textarea rows="4" name="message" id="message" class="form-control rounded g-textarea-noresize" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p>
+                                <button type="submit" class="btn-u btn-u-lg btn-u-default btn-u-upper rounded">Submit</button>
+                            </p>
+                        </fieldset>
+
+                        <!-- Success Message -->
+                        <div class="message">
+                            <i class="rounded-x fa fa-check"></i>
+                            <p>Your message was successfully sent!</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    `]]
+    <!-- Copyrights -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-3">
+                    <div class="cr-left">
+                        <p>&copy; 2016 All right reserved all4ielts.com.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6 col-xs-9">
+                    <div class="cr-right">
+                        <ul class="list-unstyled list-inline cr-list">
+                            <li><a href="[[getResourceField? &id=`138` &field=`contacts-twitter` &processTV=`1`]]" class="rounded" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="[[getResourceField? &id=`138` &field=`contacts-facebook` &processTV=`1`]]" class="fb rounded" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="[[getResourceField? &id=`138` &field=`contacts-instagram` &processTV=`1`]]" class="rounded" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="[[getResourceField? &id=`138` &field=`contacts-vk` &processTV=`1`]]" class="rounded" target="_blank"><i class="fa fa-vk"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Contact -->
+
+<!-- JS Global Compulsory -->
+<script src="assets/plugins/jquery/jquery.min.js"></script>
+<script src="assets/plugins/jquery/jquery-migrate.min.js"></script>
+<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- JS Implementing Plugins -->
+<script src="assets/plugins/smoothScroll.js"></script>
+<script src="assets/plugins/jquery.easing.min.js"></script>
+<script src="assets/plugins/pace/pace.min.js"></script>
+<script src="assets/plugins/counter/waypoints.min.js"></script>
+<script src="assets/plugins/counter/jquery.counterup.min.js"></script>
+<script src="assets/plugins/owl-carousel2/owl.carousel.min.js"></script>
+
+<script src="assets/plugins/sky-forms-pro/skyforms/js/jquery.form.min.js"></script>
+<script src="assets/plugins/sky-forms-pro/skyforms/js/jquery.validate.min.js"></script>
+
+<script src="assets/plugins/cube-portfolio/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+<script src="assets/plugins/circles-master/circles.min.js"></script>
+
+<script src="assets/plugins/backstretch/jquery.backstretch.min.js"></script>
+
+<!-- JS Page Level-->
+<script src="assets/js/one.app.js"></script>
+<script src="assets/js/plugins/pace-loader.js"></script>
+<script src="assets/js/plugins/owl-carousel2.js"></script>
+<script src="assets/js/plugins/promo.js"></script>
+<script src="assets/js/plugins/cube-portfolio-3-ns.js"></script>
+<script src="assets/js/forms/contact.js"></script>
+<script>
+    $(function () {
+        App.init();
+        App.initCounter();
+        OwlCarousel.initOwlCarousel();
+
+        ContactForm.initContactForm();
+    });
+
+
+    $('ul.nav > li').hover(function () {
+        $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn();
+    }, function () {
+        $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut();
+    })
+</script>
+<!--[if lt IE 10]>
+		<script src="../assets/plugins/sky-forms-pro/skyforms/js/jquery.placeholder.min.js"></script>
+	<![endif]-->
+	
+	
+	
+[[$counters]]
+
+
+</body>
+
+</html>
